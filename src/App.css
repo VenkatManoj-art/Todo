@@ -1,38 +1,59 @@
-.App {
+body,html{
+  height: 100%;
+  background: #211cee;
+}
+.heading{
+  color:white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo{
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px;
+  padding: 10px;
+  background:purple;
+  border-radius: 5px;
+}
+.todo p{
+  width: 80%;
+}
+.status button{
+  margin: 2px;
+  border-radius: 90px;
+  border: 1px solid grey;
+}
+.complete{
+  background-color: blue;
+  color:white;
+}
+.del{
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  padding:6px;
+  margin:10px;
+  border-radius:7px;
+  border: 0;
+  width: 96%;
+  outline:none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos{
+  height: 400px;
+  overflow: auto;
+  background-color: palevioletred;
+  margin: 20px;
+  padding: 20px;
+  border-radius:7px;
+}
+.developer{
+  background-color: cadetblue;
+  width:200px;
+  text-align: center; color: white;
+  transform: rotate(-44deg);
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  padding:7px;
 }
